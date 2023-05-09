@@ -135,7 +135,7 @@ const Sidebar = () => {
             />
             <Item
               title="Profile"
-              to="/Form"
+              to="/Profile"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
