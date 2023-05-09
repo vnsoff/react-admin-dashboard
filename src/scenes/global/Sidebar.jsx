@@ -5,18 +5,19 @@ import { Link } from "react-router-dom";
 import "react-pro-sidebar/dist/css/styles.css";
 import { tokens } from "../../theme";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import PeopleOutlinedIcon from "@mui/icons-material/PeopleOutlined";
-import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
-import ReceiptOutlinedIcon from "@mui/icons-material/ReceiptOutlined";
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
-import CalendarTodayOutlinedIcon from "@mui/icons-material/CalendarTodayOutlined";
-import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutlined";
-import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
-import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
-
+import MenuOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
+import PieChartOutlinedIcon from '@mui/icons-material/PieChartOutlined';
+import StackedLineChartOutlinedIcon from '@mui/icons-material/StackedLineChartOutlined';
+import DonutLargeOutlinedIcon from '@mui/icons-material/DonutLargeOutlined';
+import TrackChangesOutlinedIcon from '@mui/icons-material/TrackChangesOutlined';
+import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
+import GroupsOutlinedIcon from '@mui/icons-material/GroupsOutlined';
+import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -136,28 +137,28 @@ const Sidebar = () => {
             <Item
               title="Profile"
               to="/Profile"
-              icon={<HomeOutlinedIcon />}
+              icon={<AccountBoxOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Team"
               to="/Team"
-              icon={<HomeOutlinedIcon />}
+              icon={<GroupsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Partners"
               to="/Partners"
-              icon={<HomeOutlinedIcon />}
+              icon={<HandshakeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Invoices"
               to="/Invoices"
-              icon={<HomeOutlinedIcon />}
+              icon={<AttachMoneyOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -172,35 +173,35 @@ const Sidebar = () => {
             <Item
               title="Bar Charts"
               to="/Bar"
-              icon={<HomeOutlinedIcon />}
+              icon={<BarChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Pie Charts"
               to="/Pie"
-              icon={<HomeOutlinedIcon />}
+              icon={<PieChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Line Charts"
               to="/Line"
-              icon={<HomeOutlinedIcon />}
+              icon={<StackedLineChartOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Radial Charts"
               to="/Radial"
-              icon={<HomeOutlinedIcon />}
+              icon={<DonutLargeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Radar Charts"
               to="/Radar"
-              icon={<HomeOutlinedIcon />}
+              icon={<TrackChangesOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
@@ -222,21 +223,21 @@ const Sidebar = () => {
             <Item
               title="Medium"
               to="/Medium"
-              icon={<HomeOutlinedIcon />}
+              icon={<ShareOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Calendar"
               to="/Calendar"
-              icon={<HomeOutlinedIcon />}
+              icon={<CalendarMonthOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="FAQ"
               to="/FAQ"
-              icon={<HomeOutlinedIcon />}
+              icon={<HelpOutlineOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
