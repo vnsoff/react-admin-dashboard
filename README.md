@@ -1,4 +1,4 @@
-The project is in progress and is being updated.
+The project is in progress and is being constantly updated.
 
 ![image](https://user-images.githubusercontent.com/36261710/236983149-981d742a-efbe-4360-b3de-bdf1647eda9a.png)
 
