@@ -135,7 +135,7 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
             <Item
-              title="Profile"
+              title="Add User"
               to="/Profile"
               icon={<AccountBoxOutlinedIcon />}
               selected={selected}

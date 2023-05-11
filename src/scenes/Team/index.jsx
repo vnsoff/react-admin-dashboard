@@ -73,7 +73,7 @@ const Team = () => {
   ];
 
   return (
-    <Box m="20px">
+    <Box m="35px">
       <Header title="Team" subtitle="Employees working together within the organization." />
       <Box
         m="20px 0 0 0"
