@@ -3,8 +3,6 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { DataGrid } from "@mui/x-data-grid";
 import { tokens } from "../../theme";
 import { mockDataTeam } from "../../data/mockData";
-import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
-import LockOpenOutlinedIcon from "@mui/icons-material/LockOpenOutlined";
 import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../components/Header";
 
@@ -20,20 +18,25 @@ const Team = () => {
       cellClassName: "name-column--cell",
     },
     {
-      field: "age",
-      headerName: "Age",
+      field: "dept",
+      headerName: "Department",
       type: "number",
       headerAlign: "left",
       align: "left",
     },
     {
-      field: "phone",
-      headerName: "Phone Number",
+      field: "contact",
+      headerName: "Contact",
       flex: 1,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "phone",
+      headerName: "Phone",
+      flex: 1,
+    },
+    {
+      field: "requests",
+      headerName: "Requests",
       flex: 1,
     },
     {
@@ -52,14 +55,14 @@ const Team = () => {
               access === "admin"
                 ? colors.greenAccent[600]
                 : access === "manager"
-                ? colors.greenAccent[700]
-                : colors.greenAccent[700]
+                ? colors.greenAccent[600]
+                : colors.greenAccent[600]
             }
             borderRadius="4px"
           >
-            {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
-            {access === "manager" && <SecurityOutlinedIcon />}
-            {access === "user" && <LockOpenOutlinedIcon />}
+            {access === "admin" && <SecurityOutlinedIcon />}
+            {access === "manager"}
+            {access === "employee"}
             <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
               {access}
             </Typography>
@@ -71,10 +74,10 @@ const Team = () => {
 
   return (
     <Box m="20px">
-      <Header title="TEAM" subtitle="Employees working together within the organization." />
+      <Header title="Team" subtitle="Employees working together within the organization." />
       <Box
-        m="40px 0 0 0"
-        height="75vh"
+        m="20px 0 0 0"
+        height="70vh"
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",
